@@ -43,7 +43,6 @@ services:
         - /var/run/docker.sock:/var/run/docker.sock
       environment:
         - DOCKER_HOST=unix:///var/run/docker.sock
-      container_name: ci_jenkins
       networks:
         - gestor_network
     
