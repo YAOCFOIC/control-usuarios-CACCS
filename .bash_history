@@ -385,3 +385,189 @@ docker save -o img_site.tar.gz paginaconstruccion
 docker inspect red_docker
 cat Dockerfile
 cat Dockerfile_DB 
+git init
+clone https://github.com/YAOCFOIC/control-usuarios-CACCS.git
+gitclone https://github.com/YAOCFOIC/control-usuarios-CACCS.git
+git clone https://github.com/YAOCFOIC/control-usuarios-CACCS.git
+git pull
+git pull https://github.com/YAOCFOIC/control-usuarios-CACCS.git main
+git pull origin main 
+git pull origin master
+git pull https://github.com/YAOCFOIC/control-usuarios-CACCS.git master
+ls
+cd control-usuarios-CACCS/
+ls
+git pull https://github.com/YAOCFOIC/control-usuarios-CACCS.git master
+ls
+ls -l
+cd ..
+ls -l
+cat index.html 
+images
+docker images
+ls
+cat config.php 
+ls
+docker ps -a
+docker images -a
+docker stop website
+docker stop mysql-db
+docker rm a1c6f23307cc
+docker rmi a1c6f23307cc
+docker ps 
+docker ps -a
+docker stop b44ab2bef99d
+docker stop 88fbecca0b99
+docker ps -a
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rm $(docker ps -a -f status=exited -q)
+docker image prune
+docker system prune
+docker system prune -a
+docker-compose up -d
+docker ps -a
+docker images -a
+docker-compose down -v
+docker system prune -a
+docker-compose up -d
+docker system prune -a
+cat docker-compose.yml 
+cd gestor/
+cat Dockerfile 
+nano Dockerfile 
+docker-compose up -d
+docker ps -a
+docker network ls
+docker network inspect polipruebas_gestor_network 
+history | grep 'docker exec' 
+docker exec -it gestor_db /bin/bash
+ls
+nano db.php 
+sudo nano db.php 
+docker-compose down
+docker-compose up -d
+docker-compose down
+cd ..
+docker-compose up -d
+docker network inspect polipruebas_gestor_network 
+cd gestor/
+sudo nano db.php 
+cd ..
+docker-compose down
+docker-compose up -d
+docker network inspect polipruebas_gestor_network 
+docker-compose down
+docker system prune -a
+docker prune -a
+docker system prune -a
+docker-compose up -d
+docker network inspect polipruebas_gestor_network 
+docker ps
+docker system prune -a
+docker system prune
+docker image prune
+docker ps -a
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker ps
+docker ps -a
+docker images -a
+docker rmi 983f17402121
+docker images -a
+docker rmi 616e340baeac
+docker images -a
+docker ps -a
+docker-compose up -d
+docker ps -a
+history | grep 'docker exec'
+docker exec -it gestor_db sh
+pg_restore -U postgres -d gestor -v /home/polipruebas/gestor/gestor.sql
+docker exec -it gestor_db sh
+docker-compose down
+ls
+cd gestor/
+ls
+nano db.php 
+sudo nano db.php 
+docker-compose up -d
+cat db.php 
+docker ps -a
+rm -rf gestor.sql 
+sudo rm -rf gestor.sql 
+ls
+docker-compose down
+cd ..
+ls -l
+chmod ugo+rwx gestor/
+sudo chmod ugo+rwx gestor/
+ls -l
+cd gestor/
+cat gestor.sql 
+cat gestor.sql
+docker-compose down
+cd ..
+cat docker-compose.yml 
+docker system prune -a
+docker ps -a
+docker images -a
+docker-compose up -d
+docker ps -a
+docker system prune
+docker system prune -a
+- ./gestor/gestor.sql:/docker-entrypoint-initdb.d/gestor.sql
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rm $(docker ps -a -f status=exited -q)
+docker images -f dangling=true -q | xargs docker rmi
+docker image prune
+cat docker-compose.yml 
+docker-compose up -d
+docker-compose down
+docker-compose up -d
+docker image prune -a
+docker-compose down
+docker image prune -a
+docker ps prune -a
+docker ps -a
+docker-compose up -d
+docker ps -a
+docker-compose down
+docker image prune -a
+docker system prune -a
+docker ps -a
+docker images .a
+docker images -a
+docker-compose up -d
+docker ps -a
+docker-compose up -d
+docker-compose down
+docker-compose up -d
+docker ps -a
+docker exec -ti ci_jenkins bash
+git init
+ls
+cd control-usuarios-CACCS/
+ls
+cd ..
+rm -rf control-usuarios-CACCS/
+git init
+ls
+ls -l
+ls -la
+cd .git
+ls
+cd..
+cd ..
+ls
+git add .
+git status
+git commit -m "Implementación de Jenkins e implementación de docker-compost"
+git push origin master
+git remote -v
+git remote add origin https://github.com/YAOCFOIC/control-usuarios-CACCS.git
+git push origin master
+ls -l
+ls
+cat Jenkinsfile 
+ls
