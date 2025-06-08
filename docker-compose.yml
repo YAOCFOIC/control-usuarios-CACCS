@@ -22,7 +22,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: ale2025
     ports:
-      - "5432:5432"
+      - "5432:5433"
     volumes:
       - db_data:/var/lib/postgresql/data # Persistencia de datos de la base de datos
       - /home/polipruebas/gestor/gestor.sql:/docker-entrypoint-initdb.d/gestor.sql
