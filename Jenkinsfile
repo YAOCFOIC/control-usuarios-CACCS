@@ -18,6 +18,12 @@ pipeline {
             }
         }
 
+	stage('Limpiar Entorno Docker') {
+            steps {
+                sh 'docker-compose down --remove-orphans'
+            }
+        }
+
         stage('Verificar archivos en contenedor') {
             steps {
                 sh 'docker-compose run --rm web ls -R /home/polipruebas/gestor'
