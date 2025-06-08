@@ -5,7 +5,6 @@ services:
     build:
       context: ./gestor # Asegúrate de que esta ruta sea correcta para tu sistema
       dockerfile: Dockerfile
-    container_name: gestor_web
     ports:
       - "80:80" # Mapea el puerto 80 del host al puerto 80 del contenedor
     volumes:
