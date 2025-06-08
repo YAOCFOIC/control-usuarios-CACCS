@@ -1,6 +1,12 @@
 <?php
 // agregar_empleado_form.php
 // Esto es para mostrar mensajes de éxito o error que vienen de la redirección de agregar_empleado.php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
+    exit;
+}
+
 $message = '';
 $alert_type = '';
 if (isset($_GET['status'])) {

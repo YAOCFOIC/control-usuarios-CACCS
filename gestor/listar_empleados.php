@@ -2,6 +2,12 @@
 // Incluir la lógica (backend) y obtener los datos procesados
 $datos = include 'listar_empleados_logic.php';
 
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    header("Location: login.php");
+    exit;
+}
+
 // Obtener los datos de empleados, mensajes y tipos de alerta
 $empleados = $datos['empleados'];
 $message = $datos['message'];

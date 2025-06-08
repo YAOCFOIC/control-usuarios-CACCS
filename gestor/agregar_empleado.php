@@ -2,6 +2,8 @@
 // agregar_empleado.php
 include 'db.php'; // Incluir el archivo de conexión a la base de datos
 
+
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
