@@ -18,7 +18,6 @@ services:
 
   db:
     image: postgres:16 # Puedes usar una versión específica de PostgreSQL
-    container_name: gestor_db
     environment:
       POSTGRES_DB: gestor
       POSTGRES_USER: postgres
