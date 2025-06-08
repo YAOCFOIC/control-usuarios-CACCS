@@ -61,7 +61,7 @@ pipeline {
                     // Asegúrate de que la ruta de tus pruebas sea correcta dentro del contenedor 'web'.
                     // Por ejemplo, si tus pruebas están en el directorio 'tests' de tu aplicación web,
                     // y tu aplicación está en /var/www/html, la ruta correcta sería /var/www/html/tests
-                    sh 'docker-compose exec web python -m unittest discover /var/www/html/tests' // O la ruta correcta de tus pruebas
+                    sh 'docker-compose exec web python -m unittest discover /home/polipruebas/gestor/tests' // O la ruta correcta de tus pruebas
                 }
             }
         }
@@ -71,7 +71,7 @@ pipeline {
         //     steps {
         //         script {
         //             echo 'Verificando archivos en el contenedor web...'
-        //             sh 'docker-compose exec web ls -R /var/www/html/gestor' // O la ruta correcta de tus archivos
+        //             sh 'docker-compose exec web ls -R /home/polipruebas/gestor' // O la ruta correcta de tus archivos
         //         }
         //     }
         // }
