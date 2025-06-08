@@ -1,10 +1,10 @@
 <?php
 // db.php
 try {
-    $host = 'localhost';
+    $host = 'gestor_db';
     $dbname = 'gestor';
     $user = 'postgres';
-    $password = 'ale2025*';
+    $password = 'ale2025';
 
     $pdo = new PDO("pgsql:host=$host;dbname=$dbname", $user, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
