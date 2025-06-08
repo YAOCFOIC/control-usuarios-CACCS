@@ -1,7 +1,7 @@
 <?php
 // db.php
 try {
-    $host = 'gestor_db';
+    $host = 'polipruebas_db_1';
     $dbname = 'gestor';
     $user = 'postgres';
     $password = 'ale2025';
