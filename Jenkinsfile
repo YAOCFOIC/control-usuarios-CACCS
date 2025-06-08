@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        COMPOSE_PROJECT_NAME = "miproyecto-pipeline"
+        COMPOSE_PROJECT_NAME = "proyecto_nomina_pipeline"
     }
 
     stages {
