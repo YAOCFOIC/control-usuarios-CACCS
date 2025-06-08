@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        COMPOSE_PROJECT_NAME = "proyecto_nomina_pipeline"
+        COMPOSE_PROJECT_NAME = "miproyecto-pipeline"
     }
 
     stages {
@@ -20,7 +20,7 @@ pipeline {
 
         stage('Verificar archivos en contenedor') {
             steps {
-                sh 'docker-compose run --rm web ls -R /app'
+                sh 'docker-compose run --rm web ls -R /home/polipruebas/gestor'
             }
         }
 
