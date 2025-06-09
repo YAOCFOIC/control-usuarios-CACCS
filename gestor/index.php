@@ -10,6 +10,7 @@
         <a href="listar_empleados.php" class="btn btn-secondary">Ver Empleados</a>
         <a href="roles.php" class="btn btn-warning">Gestionar Roles</a>
         <a href="nomina.php" class="btn btn-success">Gestionar Nómina</a>
+        <a href="login.php" class="btn btn-danger">Cerrar Sesión</a>
     </div>
 </body>
 </html>
