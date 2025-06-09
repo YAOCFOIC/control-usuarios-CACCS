@@ -35,7 +35,14 @@ pipeline {
 
         stage('Levantar Servicios') {
             steps {
-                script {
+               script {
+		   dir('/var/jenkins_home/workspace/integracion_continua_pipeline') {
+                   // Limpiar contenedores y volúmenes anteriores
+                   // **ADVERTENCIA:** Si necesitas que los datos de la base de datos persistan,
+                   // considera eliminar solo los volúmenes no persistentes o no usar --volumes aquí.
+                   // Para una limpieza completa y reconstrucción, es apropiado.
+                   sh 'docker-compose down --rmi all --volumes --remove-orphans'
+
                     echo 'Levantando servicios Docker en segundo plano (db, web, etc.)...'
                     // Levanta todos los servicios definidos en docker-compose.yml en segundo plano.
                     // Esto hará que 'db' se cree y se inicie correctamente.
