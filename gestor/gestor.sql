@@ -37,7 +37,7 @@ CREATE TABLE empleado_roles (
 
 -- Tabla users
 CREATE TABLE users (
- id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(20),
-    password VARCHAR(20) 
+ id SERIAL PRIMARY KEY,
+    username VARCHAR(30),
+    password VARCHAR(255) 
 );
