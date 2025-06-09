@@ -32,3 +32,12 @@ CREATE TABLE empleado_roles (
     rol_id INTEGER REFERENCES roles(id),
     fecha_asignacion DATE
 );
+
+
+
+-- Tabla users
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(20),
+    password VARCHAR(20) 
+);
