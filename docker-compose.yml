@@ -14,8 +14,8 @@ services:
       - php-fpm
     networks:
       - gestor_network
-    sh 'ls -l'
-    sh 'cat nginx.conf'
+    sh 'ls -l':
+    sh 'cat nginx.conf':
   php-fpm:
     build:
       context: ./gestor
