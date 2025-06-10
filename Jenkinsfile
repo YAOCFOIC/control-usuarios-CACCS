@@ -55,7 +55,6 @@ pipeline {
             }
         }
 
-        // 🚨 NUEVO: Etapa para ejecutar el análisis de SonarQube
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv(SONARQUBE) {
@@ -68,7 +67,6 @@ pipeline {
             }
         }
 
-        // ✅ Esperar a que SonarQube dé el resultado del Quality Gate
         stage('Quality Gate') {
             steps {
                 timeout(time: 2, unit: 'MINUTES') {
@@ -84,9 +82,8 @@ pipeline {
         }
     }
 
-post {
-    always {
-        node {
+    post {
+        always {
             script {
                 echo 'Limpiando contenedores al finalizar el pipeline...'
                 sh 'docker-compose down --remove-orphans'
@@ -94,4 +91,3 @@ post {
         }
     }
 }
-
