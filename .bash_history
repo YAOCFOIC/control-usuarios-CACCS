@@ -571,3 +571,417 @@ ls -l
 ls
 cat Jenkinsfile 
 ls
+docker ps -a
+docker-compose up -d
+cat Jenkinsfile 
+git commit -m "Actualización de archivo Jenkinsfile"
+git add Jenkinsfile
+git commit -m "Actualización de archivo Jenkinsfile"
+history | grep git
+git push origin master
+nano Jenkinsfile 
+git add Jenkinsfile
+git commit -m "Actualización de archivo Jenkinsfile con nombre de proyecto"
+git push origin master
+docker exec -it ci_jenkins  bash
+cat Jenkinsfile 
+ls -R /home/polipruebas/gestor
+git add Jenkinsfile app.py test_app.py 
+
+git push origin master
+cat docker-compose.yml 
+nano docker-compose.yml 
+git add Jenkinsfile
+git add docker-compose.yml 
+git commit -m "Actualización de archivo para pruebas de jenkins"
+git push origin master
+docker system prune -a
+history | grep docker
+docker rm $(docker ps -a -q)
+docker rm $(docker ps -a -f status=exited -q)
+docker rm $(docker ps -a -q)
+docker ps -a
+docker stop b76aa6501c89
+docker stop e574de006a88
+docker stop adf6a71ef161
+docker rm $(docker ps -a -q)
+docker rm $(docker ps -a -f status=exited -q)
+docker images -a
+docker system prune
+docker images prune
+docker image prune
+docker images -a
+docker rm $(docker ps -aq)
+docker image prune -a
+docker images -a
+docker ps -a
+docker-compose up -d
+docker exec -it ci_jenkins bash
+cat Dockerfile
+cd gestor/
+ls
+cat Dockerfile 
+cd ..
+nano docker-compose.yml 
+touch Dockerfile.jenkins
+nano Dockerfile.jenkins 
+nano docker-compose.yml 
+docker-compose down
+docker-compose up -d
+docker-compose down
+docker-compose build
+docker-compose up -d
+nano Dockerfile.jenkins 
+docker-compose build
+docker-compose up -d
+nano Dockerfile.jenkins 
+docker-compose down
+docker-compose build
+docker-compose up -d
+nano Dockerfile.jenkins 
+docker-compose down
+docker-compose build
+docker-compose up -d
+docker ps -a
+docker image prune -a
+docker rm $(docker ps -aq)
+docker ps -a
+docker stop d71ce8a2adb6
+docker stop ff956d4bc2b7
+docker stop 78b9a9a93bea
+docker rm $(docker ps -aq)
+docker ps -a
+docker images -a
+docker image prune -a
+docker images -a
+docker-compose up -d
+git add .
+git commit -m "ajuste para pruebas jenkins"
+git push origin master
+docker-compose down --remove-orphans
+docker ps -a
+docker stop gestor_db
+docker rm gestor_db
+docker-compose down --remove-orphans
+docker-compose up -d
+docker-compose down --remove-orphans
+docker-compose up -d
+cat Jenkinsfile 
+nano Jenkinsfile 
+git add Jenkinsfile 
+git commit -m "Ajuste de limpiado en contenedores"
+git push origin master
+docker ps -a
+docker-compose down --remove-orphans
+docker-compose up -d
+cat Jenkinsfile 
+nano Jenkinsfile 
+cat Jenkinsfile 
+docker-compose down --remove-orphans
+docker ps -a}
+docker ps -a
+docker images -a
+docker rm $(docker ps -aq)
+docker image prune -a
+docker images -a
+docker-compose up -d
+git add Jenkinsfile 
+cat app.py 
+git commit -m "Aclaración en cambios de stages"
+git push origin master
+nano Jenkinsfile 
+git add Jenkinsfile 
+git commit -m "Aclaración en cambios de stages"
+git push origin master
+docker ps -a | grep gestor_db
+docker rm -f c9558e52a3fc
+docker-compose 
+cat docker-compose 
+cat docker-compose.yml 
+nano docker-compose.yml 
+git add .
+git commit -m "se realiza ajuste en el nombre del contenedor de base de datos para funcionamiento de jenkins"
+git push origin master
+docker-compose down --remove-orphans
+docker rm $(docker ps -aq)
+docker images -a
+docker-compose up -d
+nano docker-compose.yml 
+git add .
+git commit -m "se realiza ajuste en el nombre del contenedor de jenkins para funcionamiento de jenkins"
+git push origin master
+nano docker-compose.yml 
+git commit -m "se realiza ajuste en el nombre del contenedor web para funcionamiento de jenkins"
+git add .
+git commit -m "se realiza ajuste en el nombre del contenedor web para funcionamiento de jenkins"
+git push origin master
+dpoint proyecto_nomina_pipeline-db-1 (...): Bind for 0.0.0.0:5432 failed: port is already allocated
+sudo netstat -tulnp | grep 5432
+# O para sistemas más modernos:
+sudo lsof -i :5432
+sudo systemctl stop postgresql
+docker ps -a
+docker stop polipruebas_db_1
+docker rm polipruebas_db_1 
+docker stop 12599a983eea
+docker rm gestor_web
+docker stop polipruebas_db_1
+docker ps -a
+docker stop ci_jenkins 
+docker rm ci_jenkins 
+docker ps -a
+docker images -a
+docker rm $(docker ps -aq)
+docker image prune -a
+docker-compose up -d
+docker ps -a | grep gestor_db
+docker rm -f gestor_db
+docker ps -a.
+docker ps -a
+cat Jenkinsfile 
+nano Jenkinsfile 
+git add .
+git commit -m "Ajuste para depurar errores en jenkings"
+git push origin master
+docker ps -a
+cd gestor/
+ls
+cat db.php 
+nano db.php 
+sudo nano db.php 
+docker-compose down
+docker-compose up -d
+cd ..
+git add .
+git commit -m "configuración BD por cambio de nombres de contenedores"
+git push origin master
+docker-compose down
+docker-compose up -d
+sudo nano docker-compose.yml 
+sudo lsof -i :8080
+sudo nano docker-compose.yml 
+git add .
+git commit -m "configuración puerto jenkings"
+git push origin master
+docker-compose down
+docker-compose up -d 
+sudo nano docker-compose.yml 
+git add .
+git commit -m "configuración puerto jenkings"
+git push origin master
+sudo nano docker-compose.yml 
+cd gestor/
+ls
+sudo nano db.php 
+cd ..
+cat Jenkinsfile 
+git add .
+git commit -m "configuración puerto jenkings"
+git push origin master
+sudo nano docker-compose.yml 
+git add .
+git commit -m "configuración puerto jenkings"
+git push origin master
+docker-compose down
+docker-compose up -d
+docker ps -a
+docker stop polipruebas_db_1
+docker stop polipruebas_web_1 
+docker ps -a
+docker-compose up -d
+git pull
+git pull origin master
+docker-compose down
+docker-compose up -d
+cd gestor/
+cat db.php 
+cd ..
+git pull origin master
+cd gestor/
+cat gestor.sql
+docker-compose down
+cd ..
+sudo nano docker-compose.yml 
+docker ps -a
+docker-compose up -d
+git pull origin master
+cd gestor/
+ls -l
+docker-compose down
+docker-compose up -d
+cd ..
+cat docker-compose.yml 
+ls
+cat nginx.conf 
+nano nginx.conf 
+docker-compose down
+docker-compose up -d
+cat nginx.conf 
+nao nginx.conf 
+nano nginx.conf 
+docker-compose up -d
+docker-compose down
+docker-compose up -d
+cat docker-compose.yml 
+nano nginx.conf 
+docker-compose build
+docker-compose down
+docker-compose up --build
+docker-compose up
+docker-compose up -d
+nano nginx.conf 
+cat docker-compose.yml 
+nano nginx.conf 
+docker-compose down
+docker-compose up -d
+dockjer ps -a
+docker ps -a
+docker exec -it polipruebas_db_1 bash
+docker-compose exec web bash
+cat docker-compose.yml 
+nano docker-compose.yml 
+nano nginx.conf 
+cd gestor
+cat Dockerfile 
+cd ..
+nano nginx.conf 
+docker-compose down
+docker-compose up --build -d
+docker-compose exec web bash
+nano docker-compose.yml 
+cd gestor/
+cat Dockerfile 
+cd ..
+ls
+cat config.php 
+cat nginx.conf 
+nano nginx.conf 
+nano docker-compose.yml 
+nano nginx.conf 
+docker-compose down
+docker-compose up -d
+docker ps -a 
+docker-compose logs web
+docker-compose exec web bash
+cat docker-compose.yml 
+cat nginx.conf 
+cd gestor/
+cat Dockerfile 
+cd ..
+nano docker-compose.yml 
+docker-compose down -v
+docker-compose down 
+docker-compose up --build -d
+nano docker-compose.yml 
+docker-compose down 
+docker-compose down -v
+
+nano docker-compose.yml 
+ls -l /home/polipruebas/gestor/gestor.sql
+docker-compose down -v
+docker-compose up --build -d
+cd gestor/
+nano login.php 
+sudo nano login.php 
+docker-compose down -v
+docker-compose up --build -d
+cat docker-compose.yml 
+cd ..
+cat docker-compose.yml 
+cd gestor/
+touch Dockerfile.php
+nano Dockerfile.php 
+cd ..
+nano docker-compose.yml 
+cd gestor/
+nano login.php 
+sudo nano login.php 
+docker-compose down -v
+docker-compose up --build -d
+cd ..
+sudo nano docker-compose.yml 
+docker-compose down -v
+nano docker-compose.yml 
+docker-compose down
+nano docker-compose.yml 
+cat docker-compose.yml 
+nano docker-compose.yml 
+docker-compose down
+docker-compose up --build -d
+cd gestor/
+ls
+cat db.php
+sudo nano db.php 
+cat db.php 
+docker-compose down
+docker-compose up --build -d
+cd ..
+docker exec -it mi-postgres bash
+docker-compose down -v
+docker-compose up --build -d
+docker -ps -a
+docker ps -a
+cd gestor/
+cat db.php 
+docker-compose down -v
+docker-compose up -d
+docker ps -a
+docker-compose down -v
+docker-compose up --build -v
+docker-compose up --build -d
+docker ps -a
+history | grep docker
+docker-compose down -v
+docker image prune -a
+docker-compose up --build -d
+docker ps -a
+docker logs mi-postgres
+sudo nano gestor.sql 
+nano gestor.sql 
+docker-compose down -v
+docker image prune -a
+docker-compose up --build -d
+docker ps -a
+nano gestor.sql 
+sudo nano gestor.sql 
+docker-compose down -v
+docker image prune -a
+docker-compose up --build -d
+docker ps -a
+docker exec -it mi-postgres bash
+sudo nano login.php 
+docker-compose down -v
+docker image prune -a
+docker-compose up --build -d
+docker ps -a
+docker exec -it mi-postgres bash
+docker exec -it polipruebas_jenkins_1 bash
+cd ..
+git add .
+git commit -m "Implementación en Docker para login.php"
+git push origin master
+docker ps -a
+cd gestor
+nano index.php 
+sudo nano index.php 
+docker-compose down
+docker-compose up -d
+git add .
+git commit -m "Creación botón cerrar sesion en index.php"
+git push origin master
+docker ps -a
+docker stop mi-postgres
+docker rm mi-postgres
+cd ..
+nano Jenkinsfile 
+git add .
+git commit -m "Ajuste en pipeline"
+git push origin master
+nano Jenkinsfile 
+git add Jenkinsfile 
+git commit -m "Ajuste en pipeline"
+git push origin master
+docker ps -a
+docker-compose up -d
+docker ps -a
+docker-compose up -d
