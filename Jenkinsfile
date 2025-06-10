@@ -84,8 +84,9 @@ pipeline {
         }
     }
 
-    post {
-        always {
+post {
+    always {
+        node {
             script {
                 echo 'Limpiando contenedores al finalizar el pipeline...'
                 sh 'docker-compose down --remove-orphans'
@@ -93,3 +94,4 @@ pipeline {
         }
     }
 }
+
