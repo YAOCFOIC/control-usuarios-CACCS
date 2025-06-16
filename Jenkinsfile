@@ -90,21 +90,4 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            script {
-                echo "Cleaning up application Docker Compose services..."
-                // Nos aseguramos de apagar solo los servicios de la aplicación,
-                // para no afectar al contenedor de Jenkins si se está ejecutando desde el mismo compose.
-                sh "docker-compose down web php-fpm db --remove-orphans"
-                echo "Cleanup complete."
-            }
-        }
-        success {
-            echo "Pipeline executed successfully! Application is stable."
-        }
-        failure {
-            echo "Pipeline failed! Check the logs for errors and test failures."
-        }
-    }
 }
