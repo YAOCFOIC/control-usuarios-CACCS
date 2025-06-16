@@ -14,8 +14,10 @@ pipeline {
             steps {
                 script {
                     echo "Stopping existing Docker Compose services (excluding Jenkins itself)..."
-                    sh "docker-compose stop web php-fpm db"
-                    sh "docker-compose rm -f web php-fpm db" // Eliminar contenedores de la aplicación
+                    sh "docker-compose stop web php-fpm"
+                    sh "docker-compose rm -f web php-fpm"
+		    sh 'docker stop mi-postgres || true'
+		    sh 'docker rm mi-postgres || true'
                     echo "Building and starting web, php-fpm, and db services in detached mode..."
                     sh "docker-compose up -d --build web php-fpm db"
                 }
