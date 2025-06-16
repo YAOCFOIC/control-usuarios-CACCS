@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         APP_URL = "http://integracioncontinuapoligran.brazilsouth.cloudapp.azure.com/"
-        DB_HOST = "db" // Nombre del servicio de la DB en docker-compose
+        DB_HOST = "mi-postgres"
         DB_NAME = "gestor"
         DB_USER = "postgres"
         DB_PASSWORD = "ale2025"
