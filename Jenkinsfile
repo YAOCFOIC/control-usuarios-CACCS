@@ -10,11 +10,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-                git branch: 'master', credentialsId: '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', url: 'https://github.com/YAOCFOIC/control-usuarios-CACCS.git'
-            }
-        }
-
         stage('Build and Start Application Services') {
             steps {
                 script {
