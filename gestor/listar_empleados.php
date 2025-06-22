@@ -79,7 +79,7 @@ $alert_type = $datos['alert_type'];
 
         <div class="d-flex justify-content-between">
             <a href="agregar_empleado_form.php" class="btn btn-primary">Agregar Nuevo Empleado</a>
-            <a href="index.php" class="btn btn-secondary">Volver al Inicio</a>
+            <a href="menu.php" class="btn btn-secondary">Volver al Inicio</a>
         </div>
     </div>
 

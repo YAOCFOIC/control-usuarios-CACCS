@@ -214,7 +214,7 @@ if (isset($_GET['status'])) {
             </div>
         </div>
 
-        <a href="index.php" class="btn btn-secondary mt-3">
+        <a href="menu.php" class="btn btn-secondary mt-3">
             <i class="bi bi-arrow-left"></i> Volver al Inicio
         </a>
     </div>
