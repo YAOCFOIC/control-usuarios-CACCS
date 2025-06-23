@@ -14,10 +14,10 @@ pipeline {
             steps {
                 script {
                     echo "Stopping existing Docker Compose services"
-                    sh "docker compose stop web php-fpm db"
-                    echo "Servicios detenidos"
-                    sh "docker compose rm -f web php-fpm db"
-                    echo "Ejecuciones eliminadas"
+                    sh "docker compose down --rmi all --volumes || true"
+                    sh "docker rm -f mi-postgres || true"
+                    sh "docker rmi mi-postgres || true"
+                    echo "Servicios detenidos y eliminados"
                     sh "docker system prune -a -f --volumes"
                     echo "Limpieza general realizada"
                     sleep 10
