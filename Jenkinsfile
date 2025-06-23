@@ -18,7 +18,7 @@ pipeline {
                     echo "Servicios detenidos"
                     sh "docker compose rm -f web php-fpm db"
                     echo "Ejecuciones eliminadas"
-                    sh "docker system prune -a -f --volumes" -y
+                    sh "docker system prune -a -f --volumes"
                     echo "Limpieza general realizada"
                     sleep 10
                     echo "Construyendo contenedores desde el docker-compose.yml"
